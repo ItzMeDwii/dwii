@@ -22,7 +22,7 @@
     "@nuxtjs/axios": "^5.12.5",
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.8.3",
-    "nuxt": "^2.14.12",
+    "nuxt": "^2.15.3",
     "vuesax": "^4.0.1-alpha.25"
   },
   "devDependencies": {
