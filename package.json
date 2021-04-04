@@ -8,8 +8,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
-    "lint": "yarn lint:js",
-    "vercel": "vercel-build"
+    "lint": "yarn lint:js"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint"
