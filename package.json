@@ -23,7 +23,7 @@
     "@nuxtjs/pwa": "^3.3.5",
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^5.0.0-beta3",
-    "core-js": "^3.10.0",
+    "core-js": "^3.10.1",
     "nuxt": "^2.15.4"
   },
   "devDependencies": {
