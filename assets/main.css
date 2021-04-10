@@ -4,6 +4,10 @@ body {
     font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
+.content-1 h1 {
+    font-size: 3rem;
+}
+
 .blank-space1 {
     height: 4rem; 
 }
