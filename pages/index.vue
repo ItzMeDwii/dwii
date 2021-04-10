@@ -9,9 +9,11 @@
         My name is Satya Bagus Dwiatmaja. Im Frontend Web Developer, love to make nice websites and discord bots.
       </p>
     </div>
+    <div class="blank-space1" />
     <div class="content-2 my-5">
       B
     </div>
+    <div class="blank-space1" />
     <div class="content-3 my-5">
       C
     </div>
