@@ -15,14 +15,14 @@
             <p class="lead mb-4">
               My name is Satya Bagus Dwiatmaja. Im Frontend Web Developer, love to make nice websites and discord bots.
             </p>
-            <div class="list-inline">
-              <div class="list-inline-item">
+            <div class="list-inline text-center text-lg-start text-md-start">
+              <div class="list-inline-item mb-2">
                 <a class="btn" href="#!">About Me</a>
               </div>
-              <div class="list-inline-item">
+              <div class="list-inline-item mb-2">
                 <a class="btn" href="#!">My Projects</a>
               </div>
-              <div class="list-inline-item">
+              <div class="list-inline-item mb-2">
                 <a class="btn" href="#!">Contact Me</a>
               </div>
             </div>
