@@ -11,7 +11,21 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'My Personal Website' }
+      { hid: 'description', name: 'description', content: 'DwiiUnknown Personal Website.' },
+      { name: 'theme-color', content: '#222831' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:url', property: 'og:url', content: 'https://dwii.my.id/' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'DwiiUnknown' },
+      { hid: 'og:title', property: 'og:title', content: 'DwiiUnknown' },
+      { hid: 'og:description', property: 'og:description', content: 'DwiiUnknown Personal Website.' },
+      { hid: 'og:image', property: 'og:image', content: '/icon.png' },
+      { hid: 'twitter:card', property: 'twitter:card', content: 'summary' },
+      { hid: 'twitter:url', property: 'twitter:url', content: 'https://dwii.my.id/' },
+      { hid: 'twitter:site', property: 'twitter:site', content: 'DwiiUnknown' },
+      { hid: 'twitter:title', property: 'twitter:title', content: 'DwiiUnknown' },
+      { hid: 'twitter:description', property: 'twitter:description', content: 'DwiiUnknown Personal Website.' },
+      { hid: 'twitter:image', property: 'twitter:image', content: '/icon.png' }
+
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
