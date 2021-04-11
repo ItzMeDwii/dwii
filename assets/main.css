@@ -34,6 +34,27 @@ body {
     height: 2rem; 
 }
 
+@media only screen and (max-width: 768px) {
+    .blank-space1 {
+        height: 10rem; 
+    }
+    .blank-space2 {
+        height: 8rem; 
+    }
+    .blank-space3 {
+        height: 6rem; 
+    }
+    .blank-space4 {
+        height: 5rem; 
+    }
+    .blank-space5 {
+        height: 2rem; 
+    }
+    .blank-space6 {
+        height: 1rem; 
+    }
+}
+
 .content-1 {
     background-color: var(--color1);
     color: var(--text-color);

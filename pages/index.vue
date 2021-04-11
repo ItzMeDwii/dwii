@@ -16,7 +16,7 @@
             <p class="lead mb-4 text-center text-lg-start">
               My name is Satya Bagus Dwiatmaja. Im Frontend Web Developer, love to make nice websites and discord bots.
             </p>
-            <div class="list-inline text-center text-lg-start text-md-start">
+            <div class="list-inline text-center text-lg-start">
               <div class="list-inline-item mb-2">
                 <a v-scroll-to="'#about-me'" class="btn" href="#!">About Me</a>
               </div>
