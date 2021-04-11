@@ -16,22 +16,43 @@ body {
 }
 
 .blank-space1 {
-    height: 12rem; 
+    height: 14rem; 
 }
 .blank-space2 {
-    height: 10rem; 
+    height: 12rem; 
 }
 .blank-space3 {
-    height: 8rem; 
+    height: 10rem; 
 }
 .blank-space4 {
-    height: 6rem; 
+    height: 8rem; 
 }
 .blank-space5 {
-    height: 4rem; 
+    height: 6rem; 
 }
 .blank-space6 {
-    height: 2rem; 
+    height: 4rem; 
+}
+
+@media only screen and (max-width: 1700px) {
+    .blank-space1 {
+        height: 12rem; 
+    }
+    .blank-space2 {
+        height: 10rem; 
+    }
+    .blank-space3 {
+        height: 8rem; 
+    }
+    .blank-space4 {
+        height: 6rem; 
+    }
+    .blank-space5 {
+        height: 4rem; 
+    }
+    .blank-space6 {
+        height: 2rem; 
+    }    
 }
 
 @media only screen and (max-width: 768px) {
