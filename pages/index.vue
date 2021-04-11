@@ -6,7 +6,7 @@
         <div class="row">
           <div class="col-12 col-lg-7 col-md-12 col-sm-12">
             <div class="text-center text-lg-start">
-              <img src="https://avatars.githubusercontent.com/u/32206405?v=4" class="title-img">
+              <img src="/icon.png" class="title-img" height="240" width="240" alt="DwiiUnknown">
             </div>
             <div class="blank-space6" />
             <h1 class="mb-3 fw-bold">
