@@ -17,6 +17,9 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap' }
+    ],
+    script: [
+      { src: 'https://kit.fontawesome.com/3391280c2f.js', crossorigin: 'anonymous' }
     ]
   },
 
@@ -28,7 +31,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '@/plugins/bootstrap.js', mode: 'client' }
+    { src: '@/plugins/bootstrap.js', mode: 'client' },
+    { src: '@/plugins/scroll.js', mode: 'client' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -43,7 +47,8 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    ['vue-scrollto/nuxt', { duration: 200 }]
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
