@@ -1,6 +1,12 @@
+:root {
+    --color1: #222831;
+    --color2: #393e46;
+    --color3: #29a19c;
+    --color4: #a3f7bf;
+    --text-color: #ffffff;
+}
+
 body {
-    background-color: #222831;
-    color: #ffffff;
     font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
@@ -9,5 +15,47 @@ body {
 }
 
 .blank-space1 {
+    height: 12rem; 
+}
+.blank-space2 {
+    height: 10rem; 
+}
+.blank-space3 {
+    height: 8rem; 
+}
+.blank-space4 {
+    height: 6rem; 
+}
+.blank-space5 {
     height: 4rem; 
+}
+.blank-space6 {
+    height: 2rem; 
+}
+
+.content-1 {
+    background-color: var(--color1);
+    color: var(--text-color);
+    height: 100vh;
+    max-width: 100vw;
+}
+.content-2 {
+    background-color: var(--color2);
+    color: var(--text-color);
+    max-width: 100vw;
+}
+.content-3 {
+    background-color: var(--color3);
+    color: var(--text-color);
+    max-width: 100vw;
+}
+.content-4 {
+    background-color: var(--color1);
+    color: var(--text-color);
+    max-width: 100vw;
+}
+
+.btn {
+    background-color: var(--color1);
+    color: var(--text-color);
 }
