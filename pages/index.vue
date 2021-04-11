@@ -9,7 +9,7 @@
               <img src="https://avatars.githubusercontent.com/u/32206405?v=4" class="title-img">
             </div>
             <div class="blank-space6" />
-            <h1 class="mb-3">
+            <h1 class="mb-3 fw-bold">
               Hi! Im DwiiUnknown
             </h1>
             <p class="lead mb-4">
