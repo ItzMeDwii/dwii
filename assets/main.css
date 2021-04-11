@@ -36,7 +36,6 @@ body {
 .content-1 {
     background-color: var(--color1);
     color: var(--text-color);
-    height: 100vh;
     max-width: 100vw;
 }
 .content-2 {
@@ -56,6 +55,22 @@ body {
 }
 
 .btn {
-    background-color: var(--color1);
-    color: var(--text-color);
+    background-color: var(--color4);
+    color: var(--color2);
+}
+
+.title-img {
+    height: 15rem;
+    max-width: 15rem;
+}
+
+::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
+* {
+    scrollbar-color: #454a4d #202324;
 }
