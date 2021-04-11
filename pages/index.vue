@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <div class="content-1">
-      <div class="blank-space4" />
+      <div class="blank-space3" />
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-7 col-md-12 col-sm-12">
@@ -29,7 +29,7 @@
           </div>
         </div>
       </div>
-      <div class="blank-space4" />
+      <div class="blank-space3" />
     </div>
 
     <div class="content-2">
