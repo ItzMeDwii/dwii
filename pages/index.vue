@@ -2,44 +2,44 @@
   <div id="top" v-scroll="toTop" class="main">
     <a id="toTop" v-scroll-to="'#top'" class="btn" href="#!"><i class="fas fa-angle-up" /></a>
     <div class="content-1">
-      <div class="blank-space3" />
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-7 col-md-12 col-sm-12">
-            <div class="text-center text-lg-start">
-              <img src="/icon.png" class="title-img" height="240" width="240" alt="DwiiUnknown">
-            </div>
-            <div class="blank-space6" />
-            <h1 class="mb-3 fw-bold text-center text-lg-start">
-              Hi! Im DwiiUnknown
-            </h1>
-            <p class="lead mb-4 text-center text-lg-start">
-              My name is Satya Bagus Dwiatmaja. Im Frontend Web Developer, love to make nice websites and discord bots.
-            </p>
-            <div class="list-inline text-center text-lg-start">
-              <div class="list-inline-item mb-2">
-                <a v-scroll-to="'#about-me'" class="btn" href="#!">About Me</a>
+      <div class="center-flex">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-7 col-md-12 col-sm-12">
+              <div class="text-center text-lg-start">
+                <img src="/icon.png" class="title-img" height="240" width="240" alt="DwiiUnknown">
               </div>
-              <div class="list-inline-item mb-2">
-                <a v-scroll-to="'#my-projects'" class="btn" href="#!">My Projects</a>
-              </div>
-              <div class="list-inline-item mb-2">
-                <a v-scroll-to="'#contact-me'" class="btn" href="#!">Contact Me</a>
+              <div class="blank-space6" />
+              <h1 class="mb-3 fw-bold text-center text-lg-start">
+                Hi! Im DwiiUnknown
+              </h1>
+              <p class="lead mb-4 text-center text-lg-start">
+                My name is Satya Bagus Dwiatmaja. Im Frontend Web Developer, love to make nice websites and discord bots.
+              </p>
+              <div class="list-inline text-center text-lg-start">
+                <div class="list-inline-item mb-2">
+                  <a v-scroll-to="'#about-me'" class="btn" href="#!">About Me</a>
+                </div>
+                <div class="list-inline-item mb-2">
+                  <a v-scroll-to="'#my-projects'" class="btn" href="#!">My Projects</a>
+                </div>
+                <div class="list-inline-item mb-2">
+                  <a v-scroll-to="'#contact-me'" class="btn" href="#!">Contact Me</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="blank-space3" />
     </div>
 
     <div id="about-me" class="content-2">
       <div class="blank-space4" />
       <div class="container">
-        <h2 class="mb-3 fw-bold">
+        <h2 class="mb-5 fw-bold text-center">
           About Me
         </h2>
-        <p>
+        <p class="text-center">
           My name is Satya Bagus Dwiatmaja, Im 16 years old. Now im a High School Student. I live in East Java, Indonesia.<br>
           I can make website using Nuxt.js (Vue.js Framework).<br>
           I already making websites since 2018, i also making discord bots using JavaScript.<br>
@@ -54,10 +54,10 @@
     <div id="my-projects" class="content-3">
       <div class="blank-space4" />
       <div class="container">
-        <h2 class="mb-3 fw-bold">
+        <h2 class="mb-3 fw-bold text-center">
           My Projects
         </h2>
-        <p class="mb-3">
+        <p class="mb-5 text-center">
           Here is some project that i made & i have contributed.
         </p>
         <div class="row">
@@ -83,11 +83,11 @@
     <div id="contact-me" class="content-4">
       <div class="blank-space4" />
       <div class="container">
-        <h2 class="mb-3 fw-bold">
+        <h2 class="mb-5 fw-bold text-center">
           Contact Me
         </h2>
-        <div class="row mb-5">
-          <div v-for="social of socials" :key="social.slug" class="col-2 col-lg-1 mb-3">
+        <div class="row mb-5 center">
+          <div v-for="social of socials" :key="social.slug" class="col-2 col-lg-1 mb-3 center">
             <a v-if="social.link === '?'" data-bs-toggle="tooltip" data-bs-placement="auto" :title="social.title"><i :class="social.icon" /></a>
             <a v-else :href="social.link" target="_blank" rel="noreferrer"><i :class="social.icon" /></a>
           </div>
@@ -95,6 +95,7 @@
       </div>
       <div class="blank-space4" />
     </div>
+
     <div class="footer py-3 text-center">
       <a href="/">Copyright © 2021 DwiiUnknown</a>
     </div>
@@ -154,19 +155,9 @@ export default {
         link: 'https://gitlab.com/ItzMeDwii'
       },
       {
-        title: 'Twitter',
-        icon: 'fab fa-twitter fa-2x text-white',
-        link: 'https://twitter.com/Dwii5359'
-      },
-      {
-        title: 'Facebook',
-        icon: 'fab fa-facebook fa-2x text-white',
-        link: 'https://fb.com/dwii5359'
-      },
-      {
-        title: 'Instagram',
-        icon: 'fab fa-instagram fa-2x text-white',
-        link: 'https://www.instagram.com/dwii5359'
+        title: 'Linkedin',
+        icon: 'fab fa-linkedin fa-2x text-white',
+        link: 'https://www.linkedin.com/in/satya-bagus-dwiatmaja/'
       },
       {
         title: 'Dev.to',
@@ -174,19 +165,19 @@ export default {
         link: 'https://dev.to/itzmedwii'
       },
       {
-        title: 'Stack Overflow',
-        icon: 'fab fa-stack-overflow fa-2x text-white',
-        link: 'https://stackoverflow.com/users/12030425/dwii-5359'
+        title: 'Facebook',
+        icon: 'fab fa-facebook fa-2x text-white',
+        link: 'https://fb.com/dwii5359'
       },
       {
-        title: 'Anilist',
-        icon: 'fas fa-external-link-alt fa-2x text-white',
-        link: 'https://anilist.co/user/Dwii/'
+        title: 'Twitter',
+        icon: 'fab fa-twitter fa-2x text-white',
+        link: 'https://twitter.com/Dwii5359'
       },
       {
-        title: 'Linkedin',
-        icon: 'fab fa-linkedin fa-2x text-white',
-        link: 'https://www.linkedin.com/in/satya-bagus-dwiatmaja/'
+        title: 'Instagram',
+        icon: 'fab fa-instagram fa-2x text-white',
+        link: 'https://www.instagram.com/dwii5359'
       },
       {
         title: 'Reddit',
