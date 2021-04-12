@@ -87,15 +87,6 @@
           Contact Me
         </h2>
         <div class="row mb-5">
-          <div v-for="contact of contacts" :key="contact.slug" class="col-2 col-lg-1 mb-3">
-            <a v-if="contact.link === '?'" data-bs-toggle="tooltip" data-bs-placement="auto" :title="contact.title"><i :class="contact.icon" /></a>
-            <a v-else :href="contact.link" target="_blank" rel="noreferrer"><i :class="contact.icon" /></a>
-          </div>
-        </div>
-        <h2 class="mb-3 fw-bold">
-          Social Media
-        </h2>
-        <div class="row mb-5">
           <div v-for="social of socials" :key="social.slug" class="col-2 col-lg-1 mb-3">
             <a v-if="social.link === '?'" data-bs-toggle="tooltip" data-bs-placement="auto" :title="social.title"><i :class="social.icon" /></a>
             <a v-else :href="social.link" target="_blank" rel="noreferrer"><i :class="social.icon" /></a>
@@ -141,8 +132,7 @@ export default {
         link: 'https://animania.gg'
       }
     ]
-
-    const contacts = [
+    const socials = [
       {
         title: 'Email',
         icon: 'fas fa-envelope fa-2x text-white',
@@ -152,10 +142,7 @@ export default {
         title: 'Discord: DwiiUnknown#3704',
         icon: 'fab fa-discord fa-2x text-white',
         link: '?'
-      }
-    ]
-
-    const socials = [
+      },
       {
         title: 'Github',
         icon: 'fab fa-github fa-2x text-white',
@@ -202,7 +189,7 @@ export default {
         link: 'https://www.linkedin.com/in/satya-bagus-dwiatmaja/'
       }
     ]
-    return { lipsum, projects, contacts, socials }
+    return { lipsum, projects, socials }
   },
   mounted () {
     const bootstrap = require('bootstrap')
