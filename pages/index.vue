@@ -187,6 +187,11 @@ export default {
         title: 'Linkedin',
         icon: 'fab fa-linkedin fa-2x text-white',
         link: 'https://www.linkedin.com/in/satya-bagus-dwiatmaja/'
+      },
+      {
+        title: 'Reddit',
+        icon: 'fab fa-reddit fa-2x text-white',
+        link: 'https://www.reddit.com/user/Dwii5359'
       }
     ]
     return { lipsum, projects, socials }
