@@ -36,7 +36,7 @@
     <div id="about-me" class="content-2">
       <div class="blank-space4" />
       <div class="container">
-        <h2 class="mb-3">
+        <h2 class="mb-3 fw-bold">
           About Me
         </h2>
         <p>
@@ -54,15 +54,16 @@
     <div id="my-projects" class="content-3">
       <div class="blank-space4" />
       <div class="container">
-        <h2 class="mb-3">
+        <h2 class="mb-3 fw-bold">
           My Projects
         </h2>
         <p class="mb-3">
           Here is some project that i made & i have contributed.
         </p>
         <div class="row">
-          <div v-for="project of projects" :key="project.slug" class="col-6 col-lg-3 col-md-4 mb-4">
-            <div class="card">
+          <div v-for="project of projects" :key="project.slug" class="col-12 col-lg-3 col-md-4 mb-4">
+            <div class="card h-100">
+              <a :href="project.link" class="btn btn-sm project-btn"><i class="fas fa-external-link-alt" /></a>
               <img :src="project.img" class="card-img-top" :alt="project.title">
               <div class="card-body">
                 <h5 class="card-title fw-bold">
@@ -71,7 +72,6 @@
                 <p class="card-text">
                   {{ project.description }}
                 </p>
-                <a :href="project.link" class="btn">Visit Project</a>
               </div>
             </div>
           </div>
@@ -83,14 +83,29 @@
     <div id="contact-me" class="content-4">
       <div class="blank-space4" />
       <div class="container">
-        <h2 class="mb-3">
+        <h2 class="mb-3 fw-bold">
           Contact Me
         </h2>
-        <p>
-          {{ lipsum }}
-        </p>
+        <div class="row mb-5">
+          <div v-for="contact of contacts" :key="contact.slug" class="col-2 col-lg-1 mb-3">
+            <a v-if="contact.link === '?'" data-bs-toggle="tooltip" data-bs-placement="auto" :title="contact.title"><i :class="contact.icon" /></a>
+            <a v-else :href="contact.link" target="_blank" rel="noreferrer"><i :class="contact.icon" /></a>
+          </div>
+        </div>
+        <h2 class="mb-3 fw-bold">
+          Social Media
+        </h2>
+        <div class="row mb-5">
+          <div v-for="social of socials" :key="social.slug" class="col-2 col-lg-1 mb-3">
+            <a v-if="social.link === '?'" data-bs-toggle="tooltip" data-bs-placement="auto" :title="social.title"><i :class="social.icon" /></a>
+            <a v-else :href="social.link" target="_blank" rel="noreferrer"><i :class="social.icon" /></a>
+          </div>
+        </div>
       </div>
       <div class="blank-space4" />
+    </div>
+    <div class="footer py-3 text-center">
+      <a href="/">Copyright © 2021 DwiiUnknown</a>
     </div>
   </div>
 </template>
@@ -99,37 +114,103 @@
 export default {
   data () {
     const lipsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum metus eget odio pretium, vel commodo nisi accumsan. Nulla egestas tortor eget dui rutrum, a consectetur enim tempus. Nullam nec lorem nec odio malesuada scelerisque at eget diam. Morbi tempus mi metus, nec faucibus urna venenatis ut. Proin commodo elit non dolor condimentum porttitor. Duis ipsum est, scelerisque sit amet sem ut, eleifend venenatis nibh. Aenean cursus cursus aliquam. Donec sollicitudin erat quam, quis consectetur mauris iaculis ut. Phasellus finibus justo vitae hendrerit elementum. Pellentesque condimentum lacus at lorem scelerisque accumsan. Etiam scelerisque ipsum a sodales hendrerit. Donec pharetra augue eget sollicitudin vulputate.'
+
     const projects = [
       {
-        id: '0',
         title: 'My Website',
-        description: 'Nuxt.js',
+        description: 'DwiiUnknown Personal Website',
         img: '/preview/dwii.png',
         link: 'https://dwii.my.id'
       },
       {
-        id: '1',
         title: 'NGANTRIIN',
-        description: 'Nuxt.js',
+        description: 'Ngantriin merupakan aplikasi seluler yang memudahkan anda untuk memesan antrian dokter di praktek dokter baik di rumah sakit, puskesmas, maupun klinik.',
         img: '/preview/ngantriin.png',
         link: 'https://ngantriin.com'
       },
       {
-        id: '2',
         title: 'Auron Empire',
-        description: 'Nuxt.js',
+        description: 'Auron Empire Minecraft Server | play.auronempire.com',
         img: '/preview/auron.png',
         link: 'https://auronempire.com'
       },
       {
-        id: '3',
         title: 'Animania.gg',
-        description: 'Nuxt.js',
+        description: 'Welcome to Animania, your one stop shop for all things anime!',
         img: '/preview/animania.png',
-        link: 'https:/animania.gg'
+        link: 'https://animania.gg'
       }
     ]
-    return { lipsum, projects }
+
+    const contacts = [
+      {
+        title: 'Email',
+        icon: 'fas fa-envelope fa-2x text-white',
+        link: 'mailto:dwiiunknown@gmail.com'
+      },
+      {
+        title: 'Discord: DwiiUnknown#3704',
+        icon: 'fab fa-discord fa-2x text-white',
+        link: '?'
+      }
+    ]
+
+    const socials = [
+      {
+        title: 'Github',
+        icon: 'fab fa-github fa-2x text-white',
+        link: 'https://github.com/ItzMeDwii'
+      },
+      {
+        title: 'Gitlab',
+        icon: 'fab fa-gitlab fa-2x text-white',
+        link: 'https://gitlab.com/ItzMeDwii'
+      },
+      {
+        title: 'Twitter',
+        icon: 'fab fa-twitter fa-2x text-white',
+        link: 'https://twitter.com/Dwii5359'
+      },
+      {
+        title: 'Facebook',
+        icon: 'fab fa-facebook fa-2x text-white',
+        link: 'https://fb.com/dwii5359'
+      },
+      {
+        title: 'Instagram',
+        icon: 'fab fa-instagram fa-2x text-white',
+        link: 'https://www.instagram.com/dwii5359'
+      },
+      {
+        title: 'Dev.to',
+        icon: 'fab fa-dev fa-2x text-white',
+        link: 'https://dev.to/itzmedwii'
+      },
+      {
+        title: 'Stack Overflow',
+        icon: 'fab fa-stack-overflow fa-2x text-white',
+        link: 'https://stackoverflow.com/users/12030425/dwii-5359'
+      },
+      {
+        title: 'Anilist',
+        icon: 'fas fa-external-link-alt fa-2x text-white',
+        link: 'https://anilist.co/user/Dwii/'
+      },
+      {
+        title: 'Linkedin',
+        icon: 'fab fa-linkedin fa-2x text-white',
+        link: 'https://www.linkedin.com/in/satya-bagus-dwiatmaja/'
+      }
+    ]
+    return { lipsum, projects, contacts, socials }
+  },
+  mounted () {
+    const bootstrap = require('bootstrap')
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    // eslint-disable-next-line no-unused-vars
+    const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
   },
   methods: {
     toTop () {

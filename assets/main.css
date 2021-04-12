@@ -4,7 +4,7 @@
     --color3: #29a19c;
     --color4: #a3f7bf;
     --text-color: #ffffff;
-    --text-color-black: #393e46;
+    --text-color-black: #000000;
 }
 
 body {
@@ -76,6 +76,21 @@ body {
     }
 }
 
+@media only screen and (max-width: 576px) {
+    .main {
+        font-size: 0.875rem;
+    }
+    p {
+        font-size: 0.875rem;
+    }
+    .content-1 h1 {
+        font-size: 2rem;
+    }
+    .lead {
+        font-size: 1rem;
+    }
+}
+
 .content-1 {
     background-color: var(--color1);
     color: var(--text-color);
@@ -132,4 +147,19 @@ body {
 .card {
     background-color: var(--color2);
     color: var(--text-color);
+}
+
+.project-btn {
+    z-index: 801;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+}
+
+.footer {
+    background-color: var(--text-color-black);
+}
+.footer a {
+    color: var(--text-color);
+    text-decoration: none;
 }
