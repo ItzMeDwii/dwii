@@ -24,8 +24,9 @@ export default {
       { hid: 'twitter:site', property: 'twitter:site', content: 'DwiiUnknown' },
       { hid: 'twitter:title', property: 'twitter:title', content: 'DwiiUnknown' },
       { hid: 'twitter:description', property: 'twitter:description', content: 'DwiiUnknown Personal Website.' },
-      { hid: 'twitter:image', property: 'twitter:image', content: '/icon.png' }
-
+      { hid: 'twitter:image', property: 'twitter:image', content: '/icon.png' },
+      { hid: 'keywords', name: 'keywords', content: 'dwii, DwiiUnknown, Dwii, Discord, Satya Bagus Dwiatmaja, Satya' },
+      { hid: 'robots', name: 'robots', content: 'all' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
