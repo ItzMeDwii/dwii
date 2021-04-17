@@ -111,25 +111,25 @@ export default {
       {
         title: 'My Website',
         description: 'DwiiUnknown Personal Website',
-        img: '/preview/dwii-lowres.png',
+        img: '/preview/dwii-lowres.webp',
         link: 'https://dwii.my.id'
       },
       {
         title: 'NGANTRIIN',
         description: 'Ngantriin merupakan aplikasi seluler yang memudahkan anda untuk memesan antrian dokter di praktek dokter baik di rumah sakit, puskesmas, maupun klinik.',
-        img: '/preview/ngantriin-lowres.png',
+        img: '/preview/ngantriin-lowres.webp',
         link: 'https://ngantriin.com'
       },
       {
         title: 'Auron Empire',
         description: 'Auron Empire Minecraft Server | play.auronempire.com',
-        img: '/preview/auron-lowres.png',
+        img: '/preview/auron-lowres.webp',
         link: 'https://auronempire.com'
       },
       {
         title: 'Animania.gg',
         description: 'Welcome to Animania, your one stop shop for all things anime!',
-        img: '/preview/animania-lowres.png',
+        img: '/preview/animania-lowres.webp',
         link: 'https://animania.gg'
       }
     ]
