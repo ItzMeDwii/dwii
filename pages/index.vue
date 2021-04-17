@@ -142,7 +142,7 @@ export default {
       {
         title: 'Discord: DwiiUnknown#3704',
         icon: 'fab fa-discord fa-2x text-white',
-        link: '?'
+        link: 'https://discord.bio/p/dwiiunknown'
       },
       {
         title: 'Github',
