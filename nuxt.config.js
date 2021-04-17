@@ -30,11 +30,10 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap' }
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com' }
     ],
     script: [
-      { src: 'https://kit.fontawesome.com/3391280c2f.js', crossorigin: 'anonymous' }
+      { src: 'https://kit.fontawesome.com/3391280c2f.js', crossorigin: 'anonymous', defer: true }
     ]
   },
 
