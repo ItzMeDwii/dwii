@@ -64,7 +64,7 @@
           <div v-for="project of projects" :key="project.slug" class="col-12 col-lg-3 col-md-4 mb-4">
             <div class="card h-100">
               <a :href="project.link" class="btn btn-sm project-btn"><i class="fas fa-external-link-alt" /></a>
-              <img :src="project.img" class="card-img-top" :alt="project.title">
+              <img :src="project.img" class="card-img-top img-fluid" height="171" width="304" :alt="project.title">
               <div class="card-body">
                 <h5 class="card-title fw-bold">
                   {{ project.title }}
@@ -111,25 +111,25 @@ export default {
       {
         title: 'My Website',
         description: 'DwiiUnknown Personal Website',
-        img: '/preview/dwii.png',
+        img: '/preview/dwii-lowres.png',
         link: 'https://dwii.my.id'
       },
       {
         title: 'NGANTRIIN',
         description: 'Ngantriin merupakan aplikasi seluler yang memudahkan anda untuk memesan antrian dokter di praktek dokter baik di rumah sakit, puskesmas, maupun klinik.',
-        img: '/preview/ngantriin.png',
+        img: '/preview/ngantriin-lowres.png',
         link: 'https://ngantriin.com'
       },
       {
         title: 'Auron Empire',
         description: 'Auron Empire Minecraft Server | play.auronempire.com',
-        img: '/preview/auron.png',
+        img: '/preview/auron-lowres.png',
         link: 'https://auronempire.com'
       },
       {
         title: 'Animania.gg',
         description: 'Welcome to Animania, your one stop shop for all things anime!',
-        img: '/preview/animania.png',
+        img: '/preview/animania-lowres.png',
         link: 'https://animania.gg'
       }
     ]
