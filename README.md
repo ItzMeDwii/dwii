@@ -1,5 +1,10 @@
 # DwiiUnknown
 
+## Preview
+
+- [Netlify: dwii.netlify.app](https://dwii.netlify.app)
+- [Vercel: dwii.vercel.app](https://dwii.vercel.app)
+
 ## Build Setup
 
 ```bash
