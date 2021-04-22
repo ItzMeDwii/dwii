@@ -140,9 +140,9 @@ export default {
         link: 'mailto:dwiiunknown@gmail.com'
       },
       {
-        title: 'Discord: DwiiUnknown#3704',
+        title: 'Discord',
         icon: 'fab fa-discord fa-2x text-white',
-        link: 'https://discord.bio/p/dwiiunknown'
+        link: 'https://discord.gg/pWvpdPECDe'
       },
       {
         title: 'Github',
