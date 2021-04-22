@@ -142,7 +142,7 @@ export default {
       {
         title: 'Discord',
         icon: 'fab fa-discord fa-2x text-white',
-        link: 'https://discord.gg/pWvpdPECDe'
+        link: 'https://discord.gg/hHydBjnqUn'
       },
       {
         title: 'Github',
