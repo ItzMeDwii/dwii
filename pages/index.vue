@@ -131,6 +131,12 @@ export default {
         description: 'Welcome to Animania, your one stop shop for all things anime!',
         img: '/preview/animania-lowres.webp',
         link: 'https://animania.gg'
+      },
+      {
+        title: 'Great Roleplay ID',
+        description: 'Kami adalah Komunitas Game Online Yang Menceritakan Sebuah karakter Di Kota #greatindoroleplay.',
+        img: '/preview/greatrp-lowres.webp',
+        link: 'https://draft1-dwiiunknown.vercel.app'
       }
     ]
     const socials = [
