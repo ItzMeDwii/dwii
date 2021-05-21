@@ -60,7 +60,7 @@
         <p class="mb-5 text-center">
           Here is some project that i made & i have contributed.
         </p>
-        <div class="row">
+        <div class="row center">
           <div v-for="project of projects" :key="project.slug" class="col-12 col-lg-3 col-md-4 mb-4">
             <div class="card h-100">
               <a :href="project.link" target="_blank" rel="noreferrer" class="btn btn-sm project-btn"><i class="fas fa-external-link-alt" /></a>
