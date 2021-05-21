@@ -60,9 +60,9 @@
         <p class="mb-5 text-center">
           Here is some project that i made & i have contributed.
         </p>
-        <div class="row center">
+        <div class="row">
           <div v-for="project of projects" :key="project.slug" class="col-12 col-lg-3 col-md-4 mb-4">
-            <div class="card d-block h-100">
+            <div class="card h-100">
               <a :href="project.link" target="_blank" rel="noreferrer" class="btn btn-sm project-btn"><i class="fas fa-external-link-alt" /></a>
               <img :src="project.img" class="card-img-top img-fluid" height="171" width="304" :alt="project.title">
               <div class="card-body">
@@ -127,16 +127,16 @@ export default {
         link: 'https://auronempire.com'
       },
       {
-        title: 'Animania.gg',
-        description: 'Welcome to Animania, your one stop shop for all things anime!',
-        img: '/preview/animania-lowres.webp',
-        link: 'https://animania.gg'
-      },
-      {
         title: 'Great Roleplay ID',
         description: 'Kami adalah Komunitas Game Online Yang Menceritakan Sebuah karakter Di Kota #greatindoroleplay.',
         img: '/preview/greatrp-lowres.webp',
         link: 'https://draft1-dwiiunknown.vercel.app'
+      },
+      {
+        title: 'Animania.gg',
+        description: 'Welcome to Animania, your one stop shop for all things anime!',
+        img: '/preview/animania-lowres.webp',
+        link: 'https://animania.gg'
       }
     ]
     const socials = [
