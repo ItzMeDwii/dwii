@@ -44,7 +44,7 @@
           <br>Here are the skills I have:
         </p>
         <div class="row justify-content-center mt-4">
-          <div v-for="(item, index) in skills" :key="index" class="col-2">
+          <div v-for="(item, index) in skills" :key="index" class="col-4 col-lg-2 mb-3">
             <p class="lead fw-bold text-center mb-1">
               {{ item.category }}
             </p>
@@ -69,7 +69,7 @@
           Here is some project that i made & i have contributed.
         </p>
         <div class="row">
-          <div v-for="project of projects" :key="project.slug" class="col-12 col-lg-3 col-md-4 mb-4">
+          <div v-for="project of projects" :key="project.slug" class="col-6 col-lg-3 col-md-4 mb-4">
             <div class="card h-100">
               <a v-if="project.link === '#'" class="btn btn-sm project-btn"><i class="fas fa-external-link-alt" /></a>
               <a v-else :href="project.link" target="_blank" rel="noreferrer" class="btn btn-sm project-btn"><i class="fas fa-external-link-alt" /></a>
@@ -96,7 +96,7 @@
           Contact Me
         </h2>
         <div class="row mb-5 center">
-          <div v-for="social of socials" :key="social.slug" class="col-2 col-lg-1 mb-3 center">
+          <div v-for="social of socials" :key="social.slug" class="col-3 col-lg-1 mb-3 center">
             <a v-if="social.link === '?'" data-bs-toggle="tooltip" data-bs-placement="auto" :title="social.title"><i :class="social.icon" /></a>
             <a v-else :href="social.link" target="_blank" rel="noreferrer"><i :class="social.icon" /></a>
           </div>
