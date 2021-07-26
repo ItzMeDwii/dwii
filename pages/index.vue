@@ -40,13 +40,21 @@
           About Me
         </h2>
         <p class="text-center">
-          My name is Satya Bagus Dwiatmaja, Im 16 years old. Now im a High School Student. I live in East Java, Indonesia.<br>
-          I can make website using Nuxt.js (Vue.js Framework).<br>
-          I already making websites since 2018, i also making discord bots using JavaScript.<br>
-          <br>
-          What else I can do:<br>
-          HTML, CSS, PHP, JavaScript, TypeScript, React, NGINX, System Administration (Linux) and a little bit of UI/UX.
+          Hi, my name is Satya Bagus Dwiatmaja. Im just a normal high schooler in East Java, Indonesia. I love to make good looking websites since 2018.
+          <br>Here are the skills I have:
         </p>
+        <div class="row justify-content-center mt-4">
+          <div v-for="(item, index) in skills" :key="index" class="col-2">
+            <p class="lead fw-bold text-center mb-1">
+              {{ item.category }}
+            </p>
+            <ul class="list-unstyled text-center">
+              <li v-for="(skill, skillIndex) in item.list" :key="skillIndex">
+                {{ skill }}
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="blank-space4" />
     </div>
@@ -63,7 +71,8 @@
         <div class="row">
           <div v-for="project of projects" :key="project.slug" class="col-12 col-lg-3 col-md-4 mb-4">
             <div class="card h-100">
-              <a :href="project.link" target="_blank" rel="noreferrer" class="btn btn-sm project-btn"><i class="fas fa-external-link-alt" /></a>
+              <a v-if="project.link === '#'" class="btn btn-sm project-btn"><i class="fas fa-external-link-alt" /></a>
+              <a v-else :href="project.link" target="_blank" rel="noreferrer" class="btn btn-sm project-btn"><i class="fas fa-external-link-alt" /></a>
               <img :src="project.img" class="card-img-top img-fluid" height="171" width="304" :alt="project.title">
               <div class="card-body">
                 <h5 class="card-title fw-bold">
@@ -107,6 +116,29 @@ export default {
   data () {
     const lipsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum metus eget odio pretium, vel commodo nisi accumsan. Nulla egestas tortor eget dui rutrum, a consectetur enim tempus. Nullam nec lorem nec odio malesuada scelerisque at eget diam. Morbi tempus mi metus, nec faucibus urna venenatis ut. Proin commodo elit non dolor condimentum porttitor. Duis ipsum est, scelerisque sit amet sem ut, eleifend venenatis nibh. Aenean cursus cursus aliquam. Donec sollicitudin erat quam, quis consectetur mauris iaculis ut. Phasellus finibus justo vitae hendrerit elementum. Pellentesque condimentum lacus at lorem scelerisque accumsan. Etiam scelerisque ipsum a sodales hendrerit. Donec pharetra augue eget sollicitudin vulputate.'
 
+    const skills = [
+      {
+        category: 'Languages',
+        list: ['JavaScript', 'TypeScript', 'PHP', 'SQL']
+      },
+      {
+        category: 'Framework',
+        list: ['Vue', 'Nuxt.JS', 'React', 'Next.JS', 'CodeIgniter']
+      },
+      {
+        category: 'Frontend',
+        list: ['HTML', 'CSS', 'Bootstrap', 'TailwindCSS', 'Material Design', 'AntDesign', 'PWA']
+      },
+      {
+        category: 'Tools & Services',
+        list: ['Git', 'Figma', 'Visual Studio Code', 'Netlify', 'Vercel', 'NGINX']
+      },
+      {
+        category: 'Operating System',
+        list: ['Windows', 'Ubuntu', 'ArchLinux']
+      }
+    ]
+
     const projects = [
       {
         title: 'My Website',
@@ -139,16 +171,22 @@ export default {
         link: 'https://clutik.vercel.app'
       },
       {
+        title: 'Animania.gg',
+        description: 'Welcome to Animania, your one stop shop for all things anime!',
+        img: '/preview/animania-lowres.webp',
+        link: 'https://animania.gg'
+      },
+      {
         title: 'WIP',
         description: 'WIP.',
         img: '/preview/wip.webp',
         link: '#'
       },
       {
-        title: 'Animania.gg',
-        description: 'Welcome to Animania, your one stop shop for all things anime!',
-        img: '/preview/animania-lowres.webp',
-        link: 'https://animania.gg'
+        title: 'WIP',
+        description: 'WIP.',
+        img: '/preview/wip.webp',
+        link: '#'
       }
     ]
     const socials = [
@@ -203,7 +241,7 @@ export default {
         link: 'https://www.reddit.com/user/Dwii5359'
       }
     ]
-    return { lipsum, projects, socials }
+    return { lipsum, skills, projects, socials }
   },
   mounted () {
     const bootstrap = require('bootstrap')
