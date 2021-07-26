@@ -133,6 +133,18 @@ export default {
         link: 'https://draft1-dwiiunknown.vercel.app'
       },
       {
+        title: 'CluTIK SMANDA',
+        description: 'Club TIK SMA Negeri 2 Kota Mojokerto.',
+        img: '',
+        link: 'https://clutik.vercel.app'
+      },
+      {
+        title: 'WIP',
+        description: 'WIP.',
+        img: '',
+        link: 'https://dwii.my.id'
+      },
+      {
         title: 'Animania.gg',
         description: 'Welcome to Animania, your one stop shop for all things anime!',
         img: '/preview/animania-lowres.webp',
