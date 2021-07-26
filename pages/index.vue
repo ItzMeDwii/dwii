@@ -135,14 +135,14 @@ export default {
       {
         title: 'CluTIK SMANDA',
         description: 'Club TIK SMA Negeri 2 Kota Mojokerto.',
-        img: '',
+        img: '/preview/wip.webp',
         link: 'https://clutik.vercel.app'
       },
       {
         title: 'WIP',
         description: 'WIP.',
-        img: '',
-        link: 'https://dwii.my.id'
+        img: '/preview/wip.webp',
+        link: '#'
       },
       {
         title: 'Animania.gg',
