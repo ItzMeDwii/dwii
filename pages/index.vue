@@ -171,15 +171,15 @@ export default {
         link: 'https://clutik.vercel.app'
       },
       {
-        title: 'Animania.gg',
-        description: 'Welcome to Animania, your one stop shop for all things anime!',
-        img: '/preview/animania-lowres.webp',
-        link: 'https://animania.gg'
+        title: 'Auron-web-next',
+        description: 'Coming Soon! Auron Empire new website.',
+        img: '/preview/wip.webp',
+        link: 'https://dev.auronempire.com'
       },
       {
-        title: 'WIP',
-        description: 'WIP.',
-        img: '/preview/wip.webp',
+        title: 'Sisi Timur',
+        description: 'A digitally-powered, creativeliy-inspired consultancy, with create value &amp; more impact.',
+        img: '/preview/sisitimur-lowres.webp',
         link: '#'
       },
       {
