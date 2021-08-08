@@ -180,7 +180,7 @@ export default {
         title: 'Sisi Timur',
         description: 'A digitally-powered, creativeliy-inspired consultancy, with create value &amp; more impact.',
         img: '/preview/sisitimur-lowres.webp',
-        link: '#'
+        link: 'https://sisitimur.com'
       },
       {
         title: 'WIP',
