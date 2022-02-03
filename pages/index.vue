@@ -219,26 +219,6 @@ export default {
         title: 'Dev.to',
         icon: 'fab fa-dev fa-2x text-white',
         link: 'https://dev.to/itzmedwii'
-      },
-      {
-        title: 'Facebook',
-        icon: 'fab fa-facebook fa-2x text-white',
-        link: 'https://fb.com/dwii5359'
-      },
-      {
-        title: 'Twitter',
-        icon: 'fab fa-twitter fa-2x text-white',
-        link: 'https://twitter.com/Dwii5359'
-      },
-      {
-        title: 'Instagram',
-        icon: 'fab fa-instagram fa-2x text-white',
-        link: 'https://www.instagram.com/dwii5359'
-      },
-      {
-        title: 'Reddit',
-        icon: 'fab fa-reddit fa-2x text-white',
-        link: 'https://www.reddit.com/user/Dwii5359'
       }
     ]
     return { lipsum, skills, projects, socials }
