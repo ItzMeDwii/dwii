@@ -106,7 +106,7 @@
     </div>
 
     <div class="footer py-3 text-center">
-      <a href="/">Copyright © 2021 DwiiUnknown</a>
+      <a href="/">Copyright © 2022 DwiiUnknown</a>
     </div>
   </div>
 </template>
@@ -150,13 +150,13 @@ export default {
         title: 'NGANTRIIN',
         description: 'Ngantriin merupakan aplikasi seluler yang memudahkan anda untuk memesan antrian dokter di praktek dokter baik di rumah sakit, puskesmas, maupun klinik.',
         img: '/preview/ngantriin-lowres.webp',
-        link: 'https://ngantriin.com'
+        link: 'https://frosty-bartik-2ceae8.netlify.app/'
       },
       {
         title: 'Auron Empire',
         description: 'Auron Empire Minecraft Server | play.auronempire.com',
         img: '/preview/auron-lowres.webp',
-        link: 'https://auronempire.com'
+        link: 'https://dreamy-minsky-914787.netlify.app/'
       },
       {
         title: 'Great Roleplay ID',
@@ -171,22 +171,22 @@ export default {
         link: 'https://clutik.vercel.app'
       },
       {
-        title: 'Auron-web-next',
-        description: 'Coming Soon! Auron Empire new website.',
+        title: 'WIP',
+        description: 'WIP',
         img: '/preview/wip.webp',
-        link: 'https://dev.auronempire.com'
+        link: '#!'
       },
       {
         title: 'Sisi Timur',
         description: 'A digitally-powered, creativeliy-inspired consultancy, with create value &amp; more impact.',
         img: '/preview/sisitimur-lowres.webp',
-        link: 'https://sisitimur.com'
+        link: 'http://project7.dwii.my.id/'
       },
       {
         title: 'WIP',
         description: 'WIP.',
         img: '/preview/wip.webp',
-        link: '#'
+        link: '#!'
       }
     ]
     const socials = [
