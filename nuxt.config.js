@@ -33,7 +33,7 @@ export default {
       { rel: 'preconnect', href: 'https://fonts.gstatic.com' }
     ],
     script: [
-      { src: 'https://kit.fontawesome.com/3391280c2f.js', crossorigin: 'anonymous', defer: true, body: true }
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js', crossorigin: 'anonymous', defer: true, body: true }
     ]
   },
 
