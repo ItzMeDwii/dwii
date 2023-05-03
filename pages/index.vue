@@ -171,10 +171,10 @@ export default {
         link: 'https://clutik.vercel.app'
       },
       {
-        title: 'WIP',
-        description: 'WIP',
-        img: '/preview/wip.webp',
-        link: '#!'
+        title: 'Mizan',
+        description: 'Mizan Website',
+        img: '/preview/mizan-lowres.webp',
+        link: 'https://mizan.com'
       },
       {
         title: 'Sisi Timur',
