@@ -119,11 +119,11 @@ export default {
     const skills = [
       {
         category: 'Languages',
-        list: ['JavaScript', 'TypeScript', 'PHP', 'SQL']
+        list: ['JavaScript', 'TypeScript', 'C#', 'PHP', 'SQL']
       },
       {
         category: 'Framework',
-        list: ['Vue', 'Nuxt.JS', 'React', 'Next.JS', 'CodeIgniter']
+        list: ['Angular', 'Vue', 'Nuxt.JS', 'React', 'Next.JS']
       },
       {
         category: 'Frontend',
@@ -131,7 +131,7 @@ export default {
       },
       {
         category: 'Tools & Services',
-        list: ['Git', 'Figma', 'Visual Studio Code', 'Netlify', 'Vercel', 'NGINX']
+        list: ['Git', 'Figma', 'Visual Studio Code', 'Netlify', 'Vercel', 'NGINX', 'JetBrains IDE']
       },
       {
         category: 'Operating System',
